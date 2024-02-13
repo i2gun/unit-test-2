@@ -1,9 +1,6 @@
 package seminars.second.hw;
 
 import org.junit.jupiter.api.Test;
-import seminars.second.hw.Car;
-import seminars.second.hw.Motorcycle;
-import seminars.second.hw.Vehicle;
 
 import static org.junit.jupiter.api.Assertions.*;
 
