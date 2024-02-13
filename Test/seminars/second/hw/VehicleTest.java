@@ -1,13 +1,20 @@
 package seminars.second.hw;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class VehicleTest {
 
-    Vehicle car = new Car("Volkswagen", "Golf", 2014);
-    Vehicle moto = new Motorcycle("Suzuki", "GSX-S1000", 2015);
+    Vehicle car;
+    Vehicle moto;
+
+    @BeforeEach
+    void setVehicles() {
+        car = new Car("Volkswagen", "Golf", 2014);
+        moto = new Motorcycle("Suzuki", "GSX-S1000", 2015);
+    }
 
     @Test
     void testClassCarExtendsVehicle() {
